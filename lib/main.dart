@@ -27,17 +27,14 @@ class IntroScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            // Image and Text Section with Stack
             Expanded(
               child: Stack(
                 alignment: Alignment.centerLeft,
                 children: [
-                  // Cartoon Image
                   Image.asset(
-                    'assets/cartoon.png', // Replace with your cartoon image asset path
+                    'assets/cartoon.png', 
                     height: 468,
                   ),
-                  // Text: Boost Your Knowledge over the image
                   const Padding(
                   padding: EdgeInsets.only(left: 20, right: 20, ),
                     child: Column(
@@ -89,17 +86,15 @@ class IntroScreen extends StatelessWidget {
                 ],
               ),
             ),
-            // Buttons: Login and Sign Up
             Column(
               children: [
                 Padding(
                   padding: const EdgeInsets.only(left: 30, right: 30, ),
                   child: ElevatedButton(
                     onPressed: () {
-                      // Add your login action
                     },
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color(0xFF58CC02), // Background color
+                      backgroundColor: const Color(0xFF58CC02), 
                       padding: const EdgeInsets.symmetric(vertical: 10),
                     ),
                     child: const Center(
@@ -115,11 +110,10 @@ class IntroScreen extends StatelessWidget {
                   padding: const EdgeInsets.only(left: 30, right: 30, ),
                   child: OutlinedButton(
                     onPressed: () {
-                      // Add your sign-up action
                     },
                     style: OutlinedButton.styleFrom(
                       padding: const EdgeInsets.symmetric(vertical: 10),
-                      side: const BorderSide(color:  Color(0xFF58CC02)), // Border color
+                      side: const BorderSide(color:  Color(0xFF58CC02)), 
                     ),
                     child: const Center(
                       child: Text(
